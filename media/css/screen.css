@@ -1,6 +1,45 @@
 body {
-	font-family: georgia, sans-serif;
-	font-size: 100%;
-	font-weight: 400;
-	line-height: 1.5;
-}
+  font-family: georgia, sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+  background: #EEE; }
+
+header {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  background: white;
+  margin: 3em auto;
+  padding: 2.5em;
+  width: 60em; }
+  header p {
+    margin: 0 auto 1.5em auto;
+    min-width: 25em;
+    max-width: 33em;
+    text-align: justify;
+    font-family: "myriad-pro",sans-serif;
+    font-size: 2em;
+    font-weight: 300; }
+    header p:last-child {
+      margin-bottom: 0; }
+    header p em {
+      font-style: italic;
+      font-size: 1.15em; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #BBBBBB; }
+  a:hover {
+    border-bottom-color: black;
+    -moz-transition: border-bottom-color 0.75s;
+    -webkit-transition: border-bottom-color 0.75s;
+    -ms-transition: border-bottom-color 0.75s;
+    -o-transition: border-bottom-color 0.75s;
+    transition: border-bottom-color 0.75s; }
+
+hr {
+  clear: both; }
+
+article {
+  float: left; }

@@ -1,0 +1,65 @@
+@mixin boxshadow {
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+@mixin transition($type: all, $duration: 1s) {
+	-moz-transition: $type $duration;
+	-webkit-transition: $type $duration;
+	-ms-transition: $type $duration;
+	-o-transition: $type $duration;
+	transition: $type $duration;
+}
+
+@mixin myriad($size: 100%, $weight: 400) {
+	font-family: "myriad-pro",sans-serif;
+	font-size: $size;
+	font-weight: $weight;
+}
+
+body {
+	font-family: georgia, sans-serif;
+	font-size: 100%;
+	font-weight: 400;
+	line-height: 1.5;
+	color: black;
+	background: #EEE;
+}
+
+header {
+	@include boxshadow;
+	background: white;
+	margin: 3em auto;
+	padding: 2.5em;
+	width: 60em;
+	p {
+		margin: 0 auto 1.5em auto;
+		min-width: 25em;
+		max-width: 33em;
+		text-align: justify;
+		@include myriad(2em, 300);
+		&:last-child { margin-bottom: 0; }
+		em {
+			font-style: italic;
+			font-size: 1.15em;
+		}
+	}
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px solid #BBBBBB;
+	&:hover {
+		border-bottom-color: black;
+		@include transition(border-bottom-color, 0.75s);
+	}
+}
+
+hr {
+	clear: both;
+}
+
+article {
+	float: left;
+
+}
