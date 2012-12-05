@@ -23,7 +23,7 @@ body {
 	font-size: 100%;
 	font-weight: 400;
 	line-height: 1.5;
-	color: black;
+	color: #333;
 	background: #EEE;
 }
 
@@ -37,7 +37,12 @@ article {
 		@include myriad(2em, 300);
 		margin-bottom: 1.5em;
 		text-align: justify;
-		&:last-child { margin-bottom: 0; }
+		&:first-child {
+			margin-top: 0;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
 		em {
 			font-style: italic;
 			font-size: 1.15em;

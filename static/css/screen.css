@@ -432,7 +432,7 @@ body {
   font-size: 100%;
   font-weight: 400;
   line-height: 1.5;
-  color: black;
+  color: #333;
   background: #EEE; }
 
 article {
@@ -447,6 +447,8 @@ article {
     font-weight: 300;
     margin-bottom: 1.5em;
     text-align: justify; }
+    article p:first-child {
+      margin-top: 0; }
     article p:last-child {
       margin-bottom: 0; }
     article p em {
