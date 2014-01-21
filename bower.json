@@ -1,0 +1,6 @@
+{
+  "name": "markfinger.github.io",
+  "dependencies": {
+    "normalize-css": "~2.1.3"
+  }
+}
