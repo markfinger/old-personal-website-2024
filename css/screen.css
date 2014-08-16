@@ -1,5 +1,9 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: georgia, sans-serif;
+  font-family: 'Open Sans', georgia, sans-serif;
   font-size: 100%;
   font-weight: 300;
   line-height: 1.4;
@@ -7,54 +11,75 @@ body {
   background: #eee;
 }
 
-article {
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+.container {
+  max-width: 45em;
+  margin: 1em;
+  padding: 1em 1.25em;
   background: white;
-  margin: 3em;
-  padding: 2.5em;
-  max-width: 39em;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-article p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2em;
-  margin-bottom: 1.5em;
-  text-align: justify;
+.text {
+  margin-bottom: 1em;
+  font-size: 1.6em;
 }
 
-article p:first-child {
+.text:first-child {
   margin-top: 0;
 }
 
-article p:last-child {
+.text:last-child {
+  margin-bottom: 0.2em;
+}
+
+.work {
+  list-style: none;
+  margin: 0 0 0.3em 0;
+  padding: 0;
+  font-size: 1.6em;
+}
+
+.work-item {
+  margin-bottom: 1.4em;
+}
+
+.work-item:last-child {
   margin-bottom: 0;
 }
 
-article p a {
+.link,
+.work-item-title {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid #ccc;
 }
 
-article p a:hover {
+.work-item-title {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.work-item-subtitle {
+  display: block;
+  margin-top: 0.4em;
+  font-size: 0.8em;
+}
+
+.link:hover,
+.work-item-title:hover {
   border-bottom-color: black;
-  transition: border-bottom-color 0.75s;
+  transition: border-bottom-color 1s;
 }
 
-@media (min-width: 60em) {
-  article {
-    margin-left: auto;
-    margin-right: auto;
+@media (min-width: 35em) {
+  .text {
+    font-size: 2em;
   }
 }
 
-@media (max-width: 45em) {
-  article {
-    min-width: 0;
-    margin: 1em 1em;
-  }
-
-  article p {
-    min-width: 0;
+@media (min-width: 47em) {
+  .container {
+    margin: 3em auto;
+    padding: 3em;
   }
 }
