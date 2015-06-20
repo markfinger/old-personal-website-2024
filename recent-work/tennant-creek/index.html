@@ -20,16 +20,25 @@
 
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <!-- build:js /js/head.js -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30502542-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
   <script src="js/libs/modernizr.js"></script>
-  <!-- endbuild -->
 </head>
 <body class="loading">
   <div class="pre-load-background"></div>
   <div class="slideshow-background"></div>
 
   <header id="nav" class="navbar special-feature" role="banner">
-    <a target="_BLANK" href="http://www.theglobalmail.org/" class="brand brand-center" title="Go to The Global Mail">
+    <a class="brand brand-center">
       <img src="images/tgm-strip-logo.png" />
     </a>
   </header>
@@ -917,9 +926,9 @@
 
       <div id="comments">
         <h4>
-          Is there a way to fix Tennant Creek's housing crisis? 
+          Is there a way to fix Tennant Creek's housing crisis?
           <a class="comments-link" href="http://www.theglobalmail.org/feature/tennant-creek/799/" target="_blank">
-            <i class="icon icon-comments"></i> 
+            <i class="icon icon-comments"></i>
             Add your voice to the debate here
           </a>
         </h4>
@@ -929,7 +938,7 @@
 
     <footer class="article-footer">
       <ul class="credits">
-        <li><a target="_BLANK" href="http://www.theglobalmail.org" class="tgm" target="_blank">
+        <li><a class="tgm">
           <img src="images/tgm-footer-logo.png" title="The Global Mail" />
         </a></li>
         <li><strong>Writer:</strong> Debra Jopson</li>
@@ -945,20 +954,6 @@
 
   </div>
 
-  <!-- build:js /js/main.js -->
   <script src="bower_components/requirejs/require.js" data-main="js/main"></script>
-  <!-- endbuild -->
-
-  <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-27879276-26']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-  </script>
 </body>
 </html>
