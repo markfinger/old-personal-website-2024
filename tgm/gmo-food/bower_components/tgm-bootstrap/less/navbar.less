@@ -1,0 +1,154 @@
+//
+// Navbars (Redux)
+// --------------------------------------------------
+
+
+// COMMON STYLES
+// -------------
+
+// Inner for background effects
+// Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
+.navbar-inner {
+  background: @navbarBackground;
+  .box-shadow(none);
+}
+
+.navbar-fixed-top,
+.navbar-static-top {
+  .navbar-inner {
+    border-bottom: none;
+    border-bottom: none;
+    .background-clip(padding-box);
+    .box-shadow(0 0 10px rgba(0,0,0,.5));
+  }
+}
+
+// Links
+.navbar .nav > li > a {
+  font-weight: bold;
+}
+
+// Active nav items
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: @navbarLinkColorActive;
+  text-decoration: none;
+  background-color: @navbarLinkBackgroundActive;
+  .box-shadow(none);
+}
+
+// TGM Special Feature Banner
+.navbar.special-feature {
+  text-align: center;
+  position: relative;
+  background-color: #1b1b1b;
+  height: 32px;
+  padding: 8px 20px;
+
+  .brand {
+    .hide-text;
+    display: block;
+    background-size: contain;
+    background: transparent url('@{tgmLogoPath}') center center no-repeat;
+    width: 390px;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+
+    &.brand-center {
+      margin: 0 auto;
+      float: none;
+    }
+  }
+
+  .special-feature-misc {
+    position: absolute;
+    right: 24px;
+    top: 13px;
+    color: @grayLight;
+
+    .special-feature-links {
+      margin-right: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      .border-radius(4px);
+      display: inline-block;
+
+      a {
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 11px;
+        padding: 4px 10px;
+        color: white;
+        margin: 0;
+        line-height: 1.0;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        display: inline-block;
+
+        &:first-child {
+          border-left: none;
+        }
+
+        &:hover, &:focus, &:active {
+          .opacity(60);
+          text-decoration: none;
+        }
+      }
+    }
+
+    .share-button {
+      display: inline-block;
+      vertical-align: top;
+      // force all buttons to the same height so they're vertically aligned
+      height: 23px;
+      width: 80px;
+      overflow: visible;
+      &.facebook {
+        // Fixing a bug where the FB like
+        // button is ~30px offset to the right
+        text-align: left;
+        .ie8 &,
+        .lt-ie9 &, {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// Large tablet
+@media only screen and (max-width: 1050px) {
+  .navbar .navbar-inner {
+    .brand {
+      font-size: 380%;
+      margin-top: 42px;
+    }
+
+    .nav > li > a {
+      width: 200px;
+      padding-top: 54px;
+    }
+  }
+}
+
+// Small tablet
+@media only screen and (max-width: 750px) {
+  .navbar.special-feature {
+    padding: 0 20px;
+
+    .tgm {
+      width: 195px;
+    }
+  }
+}
+
+// Phones
+@media only screen and (max-width: 550px) {
+  .navbar.special-feature {
+    text-align: center;
+
+    .special-feature-misc {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "tgm-bootstrap",
+  "version": "0.3.2",
+  "dependencies": {
+    "bootstrap": "2.2.2"
+  },
+  "homepage": "https://github.com/tgm-archive/tgm-bootstrap",
+  "_release": "0.3.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.2",
+    "commit": "07f2dbd90a2f931b308023eb361ff51d814f93c3"
+  },
+  "_source": "git@github.com:tgm-archive/tgm-bootstrap.git",
+  "_target": "0.3.2",
+  "_originalSource": "git@github.com:tgm-archive/tgm-bootstrap.git"
+}

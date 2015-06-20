@@ -1,0 +1,38 @@
+{
+  "name": "fatcontroller",
+  "version": "0.1.0",
+  "description": "simple pub sub, with pre/post bindings and debug tracing",
+  "homepage": "http://github.com/markfinger/fatcontroller",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/markfinger/fatcontroller.git"
+  },
+  "main": "fatcontroller.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "requirejs": ">=2.1.10",
+    "lodash": ">=2.4.1"
+  },
+  "keywords": [
+    "fatcontroller",
+    "controller",
+    "pubsub",
+    "pub",
+    "sub",
+    "tracing",
+    "debug"
+  ],
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "c471b0cfa0c4d1186716347fe3b7c663bbc03319"
+  },
+  "_source": "git://github.com/markfinger/fatcontroller.git",
+  "_target": "~0.1.0",
+  "_originalSource": "fatcontroller"
+}
