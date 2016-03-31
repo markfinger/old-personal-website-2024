@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Open Sans', georgia, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.45;
   color: #444;
@@ -21,7 +21,7 @@ body {
 
 .opening-para {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 21px;
 }
 
 p:first-child {
