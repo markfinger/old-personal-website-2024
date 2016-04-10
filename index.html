@@ -27,7 +27,7 @@
   </div>
   <div class="container">
     <p>
-      Some of the larger open-source projects that I’ve written over the years.
+      Some of my recent open-source projects
     </p>
     <ul>
       <li>
@@ -54,16 +54,37 @@
         Pre-rendering React components with Python data.
       </li>
       <li>
-        <a href="https://github.com/markfinger/js-host">
-          <strong>js-host</strong>
-        </a>
-        &
-        <a href="https://github.com/markfinger/python-js-host">
-          <strong>python-js-host</strong>
+        <a href="https://github.com/markfinger/babel-plugin-hot-swap-declarative-modules">
+          <strong>babel-plugin-hot-swap-declarative-modules</strong>
         </a>
         <br>
-        Python to Node RPC. Provides a manager process that spawns and controls
-        Node processes, enabling Python processes to seamlessly talk to Node.
+        Performs a naive structural scan to identify if a JS module can be hot-swapped
+        without side-effects.
+      </li>
+      <li>
+        <a href="https://github.com/markfinger/record-store">
+          <strong>record-store</strong>
+        </a>
+        <br>
+        A data store for a build pipeline that merges asynchronous job requests and handles
+        file changes by intercepting and unrolling in-progress job chains. Used as the core
+        of a build tool.
+      </li>
+      <li>
+        <a href="https://github.com/markfinger/kv-cache">
+          <strong>kv-cache</strong>
+        </a>
+        <br>
+        Simple JS library for persistent-caching. Balances some IO-perf and code-complexity
+        trade-offs by storing records in separate files.
+      </li>
+      <li>
+        <a href="https://github.com/markfinger/cyclic-dependency-graph">
+          <strong>cyclic-dependency-graph</strong>
+        </a>
+        <br>
+        A JS library for recursively building a cyclic dependency graph. Makes heavy use of
+        immutable data-structures to enable snap-shots to be taken.
       </li>
     </ul>
   </div>
@@ -120,42 +141,11 @@
   </div>
   <div class="container">
     <p>
-      Some of the smaller or older open-source projects that I’ve written over the years.
+      Some older open-source projects that I’ve written over the years. Some
+      of these are still heavily in-use, some were primarily research projects,
+      and some have been superseded.
     </p>
     <ul>
-      <li>
-        <a href="https://github.com/markfinger/babel-plugin-hot-swap-declarative-modules">
-          <strong>babel-plugin-hot-swap-declarative-modules</strong>
-        </a>
-        <br>
-        Performs a naive structural scan to identify if a JS module can be hot-swapped
-        without side-effects.
-      </li>
-      <li>
-        <a href="https://github.com/markfinger/record-store">
-          <strong>record-store</strong>
-        </a>
-        <br>
-        A data store for a build pipeline that merges asynchronous job requests and handles
-        file changes by intercepting and unrolling in-progress job chains. Used as the core
-        of a build tool.
-      </li>
-      <li>
-        <a href="https://github.com/markfinger/kv-cache">
-          <strong>kv-cache</strong>
-        </a>
-        <br>
-        Simple JS library for persistent-caching. Balances some IO-perf and code-complexity
-        trade-offs by storing records in separate files.
-      </li>
-      <li>
-        <a href="https://github.com/markfinger/cyclic-dependency-graph">
-          <strong>cyclic-dependency-graph</strong>
-        </a>
-        <br>
-        A JS library for recursively building a cyclic dependency graph. Makes heavy use of
-        immutable data-structures to enable snap-shots to be taken.
-      </li>
       <li>
         <a href="https://github.com/markfinger/call-once-after-tick">
           <strong>call-once-after-tick</strong>
@@ -163,6 +153,18 @@
         <br>
         A Node library that forces function calls to occur only once and always in the
         process's next tick.
+      </li>
+      <li>
+        <a href="https://github.com/markfinger/js-host">
+          <strong>js-host</strong>
+        </a>
+        &
+        <a href="https://github.com/markfinger/python-js-host">
+          <strong>python-js-host</strong>
+        </a>
+        <br>
+        Python to Node RPC. Provides a manager process that spawns and controls
+        Node processes, enabling Python processes to seamlessly talk to Node.
       </li>
       <li>
         <a href="https://github.com/markfinger/webpack-yam-plugin">
