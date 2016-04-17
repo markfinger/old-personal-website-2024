@@ -15,18 +15,22 @@ body {
   margin: 0 0 0 25px;
   padding: 30px 25px;
   border-bottom: 1px solid #aaa;
-  border-left: 1px solid #aaa;
 }
 @media (min-width: 740px) {
   .container {
-    padding: 60px 50px;
+    padding: 100px 50px;
     max-width: 725px;
     margin: auto;
   }
 }
 .opening-para {
   font-weight: 400;
-  font-size: 21px;
+}
+.opening-container {
+  font-size: 24px;
+  border-left: 0;
+  text-align: center;
+  padding: 100px 20px;
 }
 .section-header {
   font-style: italic;
