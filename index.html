@@ -161,8 +161,10 @@
           <strong>python-js-host</strong>
         </a>
         <br>
-        Python to Node RPC. Provides a manager process that spawns and controls
-        Node processes, enabling Python processes to seamlessly talk to Node.
+        Python to Node RPC. Enables Python processes to make synchronous and blocking
+        calls to Node. Provides a manager process that spawns Node processes on demand
+        and provides a lifecycle such that child-processes can be reused when the
+        parent restarts.
       </li>
       <li>
         <a href="https://github.com/markfinger/webpack-yam-plugin">
@@ -172,7 +174,7 @@
         </a>
         <br>
         A webpack plugin that outputs an asset manifest with relative paths that can consumed
-        by the python library to enable built assets to be integrated into larger systems.
+        by the python library. Enables built assets to be integrated into larger systems.
       </li>
       <li>
         <a href="https://github.com/markfinger/optional-django">
