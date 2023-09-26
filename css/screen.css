@@ -29,6 +29,7 @@ body {
   border-left: 0;
   text-align: center;
   padding: 50px 20px;
+  margin-top: 50px;
 }
 p:first-child {
   margin-top: 0;
